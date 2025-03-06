@@ -1,6 +1,5 @@
-# ZeroMusic - Online Music Application
+# BeatConnect - Online Music Application
 
-English | [简体中文](README.zh-CN.md)
 
 A full-stack online music app, developed using MERN stack (React, Express.js, MongoDB) and Electron. Libraries including Tailwind CSS, Redux, Socket.IO are adopted.
 
