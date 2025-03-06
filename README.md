@@ -84,8 +84,6 @@ Start Electron client: `npm run electron:start`
 
 - All the files are stored on the local file system, Cloud integration in remaning.
 
-- While code clarity and optimization are important, they were not the primary focus because this project was written to learn web development.
-
 <details>
 
 <summary><b>RESTful API Design</b></summary>
