@@ -4,7 +4,7 @@
 A full-stack online music app, developed using MERN stack (React, Express.js, MongoDB) and Electron. Libraries including Tailwind CSS, Redux, Socket.IO are adopted.
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/home.png?raw=true" width="90%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/explore_page.png?raw=true" width="60%">
 </p>
 
 ## Features
@@ -12,13 +12,13 @@ A full-stack online music app, developed using MERN stack (React, Express.js, Mo
 - :star: Favoriting music & Adding music to playlists (from context menu)
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/add-to-playlist.png?raw=true" width="40%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/favorites.png?raw=true" width="60%">
 </p>
 
 - :speech_balloon: Sharing comments & Viewing others' comments of a track
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/comments.png?raw=true" height="auto" width="80%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/music_comments.png?raw=true" height="auto" width="60%">
 </p>
 
 - :clipboard: Creating and managing playlists & Favoriting others' playlists
@@ -28,20 +28,20 @@ A full-stack online music app, developed using MERN stack (React, Express.js, Mo
 - :speaker: Posting thoughts with music & Viewing friends' posts
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/posting.png?raw=true" width="35%">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/posts.png?raw=true" width="60%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/upload_posts.png" width="45%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/friends_posts.png?raw=true" width="45%">
 </p>
 
 - :blush: Personal profile page, showing one's favorites, playlists and posts
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/profile.png?raw=true" height="auto" width="80%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/personal_profile.png" height="auto" width="60%">
 </p>
 
 - :envelope: Personal messaging (Socket.IO)
 
 <p align="center">
-    <img src="https://github.com/HaowenHou/zero-music-mern/blob/main/.github/assets/en/personal-message.png?raw=true" height="auto" width="80%">
+    <img src="https://github.com/Xtrex101/BeatConnect/blob/main/github-assets/personal_messaging.png?raw=true" height="auto" width="60%">
 </p>
 
 - :lock: User authentication with JWT
@@ -58,7 +58,7 @@ Inside the backend directory, create a `.env` file specifying environment variab
 
 ```env
 PORT=""            # The port for backend
-MONGO_URI=""       # MongoDB URI, local or cloud. E.g., "mongodb://localhost:27017/zero-music"
+MONGO_URI=""       # MongoDB URI, local or cloud. E.g., "mongodb://localhost:27017/BeatConnect"
 JWT_SECRET_KEY=""  # Secret key for JWT, which can be generated using `openssl rand -base64 64`
 ```
 
@@ -73,8 +73,6 @@ Start React frontend: `npm run dev`
 
 Start Electron client: `npm run electron:start`
 
-Change language: Set `fallbackLng` in `src/i18n.js`. Supports `en` and `zh-CN`.
-
 ## Miscellaneous
 
 - Note that only admin can manage tracks. A user can be set as admin using mongosh:
@@ -83,9 +81,8 @@ Change language: Set `fallbackLng` in `src/i18n.js`. Supports `en` and `zh-CN`.
     db.users.findOneAndUpdate({_id: ObjectId('xxx')}, {$set: {role: "admin"}})
     ```
 
-- Since that the first part of this project was written in Next.js and later separated into React and Express, the frontend still follows a file-system based router, with `[xxx]` representing dynamic routes.
 
-- Due to unstable network connection during development, clould storage service like AWS S3 were not utilized. Instead, all the files are stored on the local file system.
+- All the files are stored on the local file system, Cloud integration in remaning.
 
 - While code clarity and optimization are important, they were not the primary focus because this project was written to learn web development.
 
